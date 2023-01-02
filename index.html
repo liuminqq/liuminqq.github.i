@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head><title>候鸟驿站</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content=""/>
+	<script src="js/echarts.js"></script>
+    <script src="js/vintage.js"></script>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+	<!-- Font-Awesome-Icons-CSS -->
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+	<!-- Owl-Carousel-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<!-- //css files -->
+	<!-- web fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Molle:400i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+	    rel="stylesheet">
+	<!-- //web fonts -->
+</head>
+
+<body>
+	<div class="w3l-main" id="home">
+		<div class="container">
+			<!-- header -->
+			<div class="header">
+				<div class="logo">
+				
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- //header -->
+		</div>
+		<!-- Slider -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider">
+					<li>
+						<div class="slider-img-w3layouts one">
+							<div class="w3l-overlay">
+								<div class="container">
+									<div class="banner-text-info">
+										<h3>It's easy to 
+											<span>love</span>  and
+											<span> protect</span> birds</h3>
+										<p>The singing of birds is their most beautiful music to nature 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--//Slider-->
+	</div>
+	<!--//banner-->
+
+	<!-- sticky navigation -->
+	<div class="nav-links">
+		<nav class='navbar navbar-default'>
+			<div class='container'>
+				<div class='navbar-header'>
+					<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+						<span class='sr-only'>Toggle Navigation</span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+				</div>
+				<div class='collapse navbar-collapse'>
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="#about" class="scroll">候鸟种类</a>
+						</li>
+						<li>
+							<a href="#services" class="scroll">迁徙时间</a>
+						</li>
+						<li>
+							<a href="#blog" class="scroll">迁徙路线</a>
+						</li>
+						<li>
+							<a href="#team" class="scroll">共同守护</a>
+						</li>
+			
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- //sticky navigation -->
+
+	<!-- 种类 -->
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="agile-title">候鸟种类</h3>
+			<div class="about-top w3ls-agile">
+				<div class="col-md-6 red">
+					<img class="img-responsive" src="images/ab.jpg" alt="">
+				</div>
+				<div class="col-md-6 come">
+					<div class="about-wel">
+						<h5>候鸟知冷暖 游子盼归途
+						</h5>
+						<p>候鸟，是一种随季节不同周期性进行迁徙的鸟类。很多鸟类具有沿纬度季节迁移的特性，夏天的时候这些鸟在纬度较高的温带地区繁殖，冬天的时候则在纬度较低的热带地区过冬。夏末秋初的时候这些鸟类由繁殖地往南迁移到渡冬地，而在春天的时候由渡冬地北返回到繁殖地。这些随着季节变化而南北迁移的鸟类称之为候鸟。
+							有些鸟可随着1年中季节的改变而作定时迁徙来变换栖息地，这类鸟称为候鸟。候鸟可分为夏候鸟和冬候鸟两种。前者指在春夏季飞到某一地区筑巢安家、生儿育女，幼鸟长大时，正值深秋，它们又陆续飞往南方较暖地区越冬，至次年春季又飞临这一地区繁殖，对该地区而言，这类鸟称夏候鸟。
+						</p>
+					</div>
+					<div class="button-styles">
+						<a href="#" data-toggle="modal" data-target="#myModal2">了解更多</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div id="main" style="width: 1200px;height:600px;left: 150px;top:50px;"></div>
+    <script type="text/javascript">
+    
+      var myChart = echarts.init(document.getElementById('main'),'vintage');
+
+     
+      option = {
+  title: {
+    text: '常见的候鸟种类',
+   
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left'
+  },
+  series: [
+    {
+      
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 1048, name: '黄鹂' },
+        { value: 735, name: '杜鹃' },
+        { value: 580, name: '天鹅' },
+        { value: 484, name: '鸿雁' },
+        { value: 300, name: '夏候鸟'},
+        { value: 300, name: '冬候鸟'},
+        { value: 275, name: '燕子'},
+        { value: 255, name: '丹顶鹤'},
+        { value: 245, name: '大雁'},
+        { value: 200, name: '野鸭'},
+        { value: 198, name: '漂鸟'},
+        { value: 165, name: '雪雁'},
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+
+     
+      myChart.setOption(option);
+    </script>
+	</div>
+	<!-- //种类-->
+
+	<!-- 种类展示区 -->
+	<div class="w3agile-spldishes">
+		<div class="container">
+			<div class="spldishes-grids">
+				<!-- Owl-Carousel -->
+				<div id="owl-demo" class="owl-carousel text-center agileinfo-gallery-row">
+					<a class="item g1">
+						<img class="lazyOwl" src="images/m1.jpg" title="Cat Life" alt="" />
+					</a>
+					<a class="item g1">
+						<img class="lazyOwl" src="images/m2.jpg" title="Cat Life" alt="" />
+					</a>
+					<a class="item g1">
+						<img class="lazyOwl" src="images/m3.jpg" title="Cat Life" alt="" />
+					</a>
+					<a class="item g1">
+						<img class="lazyOwl" src="images/m4.jpg" title="Cat Life" alt="" />
+					</a>
+					<a class="item g1">
+						<img class="lazyOwl" src="images/m5.jpg" title="Cat Life" alt="" />
+					</a>
+					<a class="item g1">
+						<img class="lazyOwl" src="images/m6.jpg" title="Cat Life" alt="" />
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //种类展示区 -->
+
+		<!-- 时间 -->
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="agile-title">迁徙时间</h3>
+			<div class="w3_agile_services_grids">
+				<div class="col-md-4 col-sm-4 col-xs-4 w3_agile_services_grid " data-aos="zoom-in">
+					<div class="ih-item circle effect1 agile_services_grid">
+						<div class="spinner"></div>
+						<div class="img">
+							<img src="images/c1.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<fieldset>
+						<legend>东北区</legend>
+						森林鸟类代表性种类有细 嘴松鸡、花尾榛鸡、斑翅山鹑、星鸦、松鸦、灰喜鹊、黑啄木鸟、戴菊、普通䴓、小太平鸟、柳雷鸟、牛头伯劳、 沙 、灰椋鸟、金翅雀等。
+					</fieldset>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 w3_agile_services_grid" data-aos="zoom-in">
+					<div class="ih-item circle effect1 agile_services_grid">
+						<div class="spinner"></div>
+						<div class="img">
+							<img src="images/c2.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<fieldset>
+						<legend>华北区</legend>
+						代表性鸟类有褐马鸡、长 尾雉、勺鸡、红嘴蓝鹊、山鸦、灰喜鹊、山噪鹛等种类，以大杜鹃、翠鸟、麻雀、家燕、金腰燕、雨燕、红尾伯劳、鹀科鸟类、乌鸦、喜鹊。
+					</fieldset>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 w3_agile_services_grid" data-aos="zoom-in">
+					<div class="ih-item circle effect1 agile_services_grid">
+						<div class="spinner"></div>
+						<div class="img">
+							<img src="images/c3.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<fieldset>
+						<legend>蒙新区</legend>
+						特有鸟类有大鸨、毛腿沙鸡，优势种和常见种有云雀、角百灵、蒙古百灵、灰头鹀、黄胸鹀、麦鸡、沙鸡、 地鸦、雪雀、大鸨、沙等鸟类分布于全境。
+					</fieldset>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_agile_services_grids">
+				<div class="col-md-4 col-sm-4 col-xs-4 w3_agile_services_grid " data-aos="zoom-in">
+					<div class="ih-item circle effect1 agile_services_grid">
+						<div class="spinner"></div>
+						<div class="img">
+							<img src="images/c4.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<fieldset>
+						<legend>青藏区</legend>
+						夏季在此繁殖的鸟类有高山兀鹫、黑颈鹤、赤麻鸭、棕头鸥、鸬鹚等鸟类。该区青海藏南亚区，栖息有血雉、角雉、马鸡、 雉鹑、灰腹噪鹛、多种朱雀等。
+					</fieldset>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 w3_agile_services_grid" data-aos="zoom-in">
+					<div class="ih-item circle effect1 agile_services_grid">
+						<div class="spinner"></div>
+						<div class="img">
+							<img src="images/c5.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<fieldset>
+						<legend>西南区</legend>
+						血雉、虹雉、灰胸薮鹛是该区域鸟类的典型代表，画眉科和雉科鸟类在该区域种类繁多。画眉科的噪鹛、雀鹛、钩嘴鹛在该区域不仅种类丰富，而且种群数量大。
+
+
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 w3_agile_services_grid" data-aos="zoom-in">
+					<div class="ih-item circle effect1 agile_services_grid">
+						<div class="spinner"></div>
+						<div class="img">
+							<img src="images/c6.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<fieldset>
+						<legend>华中区</legend>
+						森林鸟类代表种类有红腹锦鸡、灰胸竹鸡、大拟啄木鸟、画眉、 白冠长尾雉、白颈长尾雉等。
+					</fieldset>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="w3l-img-side">
+			<img src="images/cat11.png" alt="" />
+		</div>
+		<div class="w3l-img-side w3l-img-side2">
+			<img src="images/cat1.png" alt="" />
+		</div>
+		<div id="main2" style="width: 1200px;height:600px;left: 150px;top: 50px;"></div>
+    <script type="text/javascript">
+     
+      var myChart2 = echarts.init(document.getElementById('main2'),'vintage');
+
+    
+      const labelRight = {
+  position: 'right'
+};
+option = {
+  title: {
+    text: '迁徙时间',
+    subtext: '迁徙时间长度：3月至6月初'
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    },
+    formatter: function (params) {
+      var tar = params[1];
+      return tar.name + '<br/>' + tar.seriesName + ' : ' + tar.value;
+    }
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'category',
+    splitLine: { show: false },
+    data: ['猛禽', '雁鸭类', '鸻鹬类', '鹭类']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Placeholder',
+      type: 'bar',
+      stack: 'Total',
+      itemStyle: {
+        borderColor: 'transparent',
+        color: 'transparent'
+      },
+      emphasis: {
+        itemStyle: {
+          borderColor: 'transparent',
+          color: 'transparent'
+        }
+      },
+      data: [3.5, 3.5, 3.9, 3.5]
+    },
+    {
+      name: '数值',
+      type: 'bar',
+      stack: 'Total',
+      label: {
+        
+        position: 'inside'
+      },
+      data: [
+        { value: 2.4, name: '3月中旬至5月底' },
+        { value: 2.4, name: '3月中旬至5月底' },
+        { value: 2, name: '3月底至5月底' },
+        { value: 1, name: '3月中旬至4月上旬' },
+      
+      ],
+    }
+  ]
+};
+    
+      myChart2.setOption(option);
+    </script>
+	</div>
+	<!-- //时间 -->
+
+	<!-- 路线 -->
+	<div class="blog" id="blog">
+		<div class="container">
+			<h3 class="agile-title">迁徙路线</h3>
+			<div class="col-md-5 col-xs-6 blog-grids">
+				<div class="blog-full-wthree">
+					<div id="main1" style="width: 1200px;height:600px;left:150px;"></div>
+    <script type="text/javascript">
+      
+      var myChart1 = echarts.init(document.getElementById('main1'),'vintage');
+
+    
+      option = {
+        title: {
+    text: '迁移路线'
+  },
+  series: {
+    type: 'sankey',
+    layout: 'none',
+    emphasis: {
+      focus: 'adjacency'
+    },
+    data: [
+        { name: '内蒙古' },
+        { name: '东北' },
+        { name: '西部' },
+        { name: '东部' },
+        { name: '中部' },
+        { name: '东部沿海' },
+        { name: '四川盆地' }
+      ],
+      links: [
+        { source: '内蒙古', target: '西部', value: 10 },
+        { source: '内蒙古', target: '东部', value: 3 },
+        { source: '内蒙古', target: '中部', value: 8 },
+        { source: '东北', target: '西部', value: 3 },
+        { source: '东北', target: '东部', value: 1 },
+        { source: '东北', target: '中部', value: 2 },
+        { source: '西部', target: '东部沿海', value: 6},
+        { source: '西部', target: '四川盆地', value: 7 },
+        { source: '东部', target: '东部沿海', value: 1 },
+        { source: '东部', target: '四川盆地', value: 3 },
+        { source: '中部', target: '东部沿海', value: 5 },
+        { source: '中部', target: '四川盆地', value: 6 }
+      ],
+      orient: 'vertical',
+      label: {
+        position: 'top'
+      },
+      lineStyle: {
+        color: 'source',
+        curveness: 0.5
+      }
+    }
+  
+};
+
+      myChart1.setOption(option);
+    </script>
+					
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="blog-grids mid-blog-agile">
+			<img src="images/cat2.png" class="img-responsive" alt="">
+		</div>
+		
+	</div>
+	<!-- Modal5 -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="modal-info">
+						<h4>候鸟迁徙</h4>
+						<img src="images/g2.jpg" alt=" " class="img-responsive" />
+						<h5>根据鸟类迁徙的行为，可以将鸟类分成不同的居留类型：</h5>
+						<p class="para-agileits-w3layouts">候鸟是那些有迁徙行为的鸟类，它们每年春秋两季沿着固定的路线往返于繁殖地和避寒地之间。在不同的地域，根据候鸟出现的时间，可以将候鸟分为夏候鸟、冬候鸟、旅鸟、漂鸟。如果鸟类，在它避寒地则视为冬候鸟，在它的繁殖地（或避暑地）则为夏候鸟，在它往返于避寒地和繁殖地途中所经过的区域则为旅鸟。在一定广域范围，或是夏居山林，冬居平原处的则视为漂鸟。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal5 -->
+	<!-- // -->
+
+	<!-- 共同守护 -->
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="agile-title">候鸟迁徙-共同守护</h3>
+			<div class="team-agileinfo agileits-w3layouts">
+				<div class="col-md-6 team-grid w3-agileits">
+					<div class="team-grid-right">
+						<img src="images/t1.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="team-grid-left">
+						<h4>强化巡护，确保安全</h4>
+						<p>相关部门加强了栖息地、迁徙通道等重点区域的巡查巡护工作，严厉打击滥捕、滥猎、滥食、非法交易等违法行为，为越冬鸟类筑牢安全屏障。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 team-grid w3-agileits">
+					<div class="team-grid-right aliquam">
+						<img src="images/t2.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="team-grid-left non">
+						<h4>科技助力，保驾护航</h4>
+						<p>栖息地管理部门积极采用高科技巡护监测技术，在鸟类分布重点区域设置多处监控装置，开展全天候远程巡护监测，实现数据共享，监控体系进一步完善。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="team-agileinfo">
+				<div class="col-md-6 team-grid w3-agileits">
+					<div class="team-grid-right">
+						<img src="images/t3.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="team-grid-left">
+						<h4>储备饲食，平稳过冬</h4>
+						<p>入冬以来，气温降低，出现降雪等恶劣天气，鸟类觅食困难，栖息地管理部门及时准备越冬粮食储备，保障野生鸟类顺利越冬。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 team-grid w3-agileits">
+					<div class="team-grid-right aliquam">
+						<img src="images/t4.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="team-grid-left non">
+						<h4>广泛宣传，营造氛围</h4>
+						<p>野生动物物保护协会采取发放宣传单、悬挂宣传条幅、微信公众号等多种形式广泛开展保护宣传教育活动，大力营造爱护野生动，保护野生动社会氛围，守护好生态文明建设成果。</p>
+					</div>
+
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //共同守护 -->
+
+	<!-- 候鸟展示 -->
+	<div id="gallery" class="gallery">
+		<div class="container">
+			<h3 class="agile-title">肯羡鸣春为候鸟，自甘饮露作寒蝉</h3>
+		</div>
+		<div class="agileinfo-gallery-row">
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/m1.jpg" class="imghvr-hinge-right figure">
+					<img src="images/m1.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/g2.jpg" class="imghvr-hinge-right figure">
+					<img src="images/g2.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/g3.jpg" class="imghvr-hinge-right figure">
+					<img src="images/g3.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/m4.jpg" class="imghvr-hinge-right figure">
+					<img src="images/m4.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/m5.jpg" class="imghvr-hinge-right figure">
+					<img src="images/m5.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/m6.jpg" class="imghvr-hinge-right figure">
+					<img src="images/m6.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/m3.jpg" class="imghvr-hinge-right figure">
+					<img src="images/m3.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4 w3gallery-grids">
+				<a href="images/m2.jpg" class="imghvr-hinge-right figure">
+					<img src="images/m2.jpg" alt="" title="候鸟" />
+				</a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //Gallery -->
+
+
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<!-- //js -->
+
+	<!-- Banner Slider -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!-- //Banner Slider -->
+
+	<!-- Sticky Navigation Script -->
+	<script>
+		$(window).scroll(function () {
+			if ($(window).scrollTop() >= 795) {
+				$('nav').addClass('fixed-header');
+			} else {
+				$('nav').removeClass('fixed-header');
+			}
+		});
+
+		/* scrollTop() >= 795
+		   Should be equal the the height of the header
+		 */
+	</script>
+	<!-- //Sticky Navigation Script -->
+
+	<!-- simple-lightbox -->
+	<script src="js/simple-lightbox.min.js"></script>
+	<script>
+		$(function () {
+			var gallery = $('.agileinfo-gallery-row a').simpleLightbox({
+				navText: ['&lsaquo;', '&rsaquo;']
+			});
+		});
+	</script>
+	<link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+	<!-- Light-box css -->
+	<!-- //simple-lightbox -->
+
+	<!-- smoothscroll -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- //smoothscroll -->
+
+	<!-- start-smooth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+
+	<!-- smooth-scrolling-of-move-up -->
+	<script>
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+
+	<!-- Owl-Carousel-JavaScript -->
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+				items: 3,
+				lazyLoad: true,
+				autoPlay: true,
+				pagination: true,
+			});
+		});
+	</script>
+	<!-- //Owl-Carousel-JavaScript -->
+
+</body>
+
+</html>
